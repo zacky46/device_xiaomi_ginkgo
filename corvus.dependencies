@@ -1,0 +1,50 @@
+ 
+[
+  {
+    "repository": "CorvusRom-Devices/device_xiaomi_ginkgo",
+    "target_path": "device/xiaomi/ginkgo",
+    "branch": "10",
+    "remote": "github"
+  },
+  {
+    "repository": "CorvusRom-Devices/kernel_xiaomi_ginkgo",
+    "target_path": "kernel/xiaomi/ginkgo",
+    "branch": "10",
+    "remote": "github" 
+  },
+  {
+    "repository": "CorvusRom-Devices/vendor_xiaomi_ginkgo",
+    "target_path": "vendor/xiaomi/ginkgo",
+    "branch": "10",
+    "remote": "github"
+  },
+  {
+    "repository": "CorvusRom-Devices/vendor_xiaomi_trinket-common",
+    "target_path": "vendor/xiaomi/trinket-common",
+    "branch": "10",
+    "remote": "github"
+  },
+  {
+    "repository": "CorvusRom-Devices/device_xiaomi_trinket-common",
+    "target_path": "device/xiaomi/trinket-common",
+    "branch": "10",
+    "remote": "github"
+  },
+  {
+    "repository": "trinket-devs/vendor_miuicamera",
+    "target_path": "vendor/miuicamera",
+    "branch": "10.0",
+    "remote": "github"
+  },
+  { "repository" : "PixelExperience/packages_apps_PixelLiveWallpaper", 
+    "target_path": "packages/apps/PixelLiveWallpaper", 
+    "branch": "ten", 
+    "remote": "gitlab"
+  },
+  {
+    "repository": "trinket-devs/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-12.0",
+    "branch": "master",
+    "remote": "github"
+  }
+]
