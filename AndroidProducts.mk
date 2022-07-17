@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 Bootleggers
+# Copyright (C) 2020 NusantaraProjectOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_ginkgo.mk
+    $(LOCAL_DIR)/nad_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_ginkgo-user \
-    bootleg_ginkgo-userdebug \
-    bootleg_ginkgo-eng
+    nad_ginkgo-user \
+    nad_ginkgo-userdebug \
+    nad_ginkgo-eng

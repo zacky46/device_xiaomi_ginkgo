@@ -8,4 +8,3 @@ ro.se.type=HCE,UICC
 # Navigasi
 ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
-

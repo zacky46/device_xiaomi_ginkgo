@@ -23,13 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common Bootleggers stuff
+# Inherit some common Nusantara stuff
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+NAD_BUILD_TYPE := UNOFFICIAL
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
 
 # Device identifier
-PRODUCT_NAME := bootleg_ginkgo
+PRODUCT_NAME := nad_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
