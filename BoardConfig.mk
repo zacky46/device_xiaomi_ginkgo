@@ -13,6 +13,8 @@ DEVICE_PATH := device/xiaomi/ginkgo
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+TARGET_SCREEN_DENSITY := 420
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ginkgo,willow
 

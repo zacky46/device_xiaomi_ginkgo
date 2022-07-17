@@ -23,18 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common CorvusOS stuff
+# Inherit some common Bootleggers stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+WITH_GMS := true
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := du_ginkgo
+PRODUCT_NAME := bootleg_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
 PRODUCT_MANUFACTURER := Xiaomi
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Fingerprint
-BUILD_FINGERPRINT := google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys"
 
+BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
